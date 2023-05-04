@@ -252,6 +252,7 @@ public class EditorJFrame extends javax.swing.JFrame {
                         e.printStackTrace();
                     }
                     JOptionPane.showMessageDialog(null, "Filtro BMP a JPG Aplicado Correctamente", "Ugallery", JOptionPane.INFORMATION_MESSAGE);  
+                    
                 } 
             }
             if(copiaCB.isSelected()==true){
@@ -289,7 +290,13 @@ public class EditorJFrame extends javax.swing.JFrame {
                 }
                 JOptionPane.showMessageDialog(null, "Filtro Blanco Y Negro Aplicado Correctamente", "Ugallery", JOptionPane.INFORMATION_MESSAGE); 
             }
-              
+            JpgBmpCB.setSelected(false);
+            copiaCB.setSelected(false);
+            coloresCB.setSelected(false);
+            modificarCB.setSelected(false);
+            blancoNegroCB.setSelected(false);
+            rutaTXT.setText(null);
+            JOptionPane.showMessageDialog(null, "Procesamiento de Imagen Completado Correctamente", "Ugallery", JOptionPane.INFORMATION_MESSAGE);     
         }
     }//GEN-LAST:event_jButton6ActionPerformed
 
